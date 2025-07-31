@@ -8,7 +8,6 @@ import Header from "@/components/Header";
 import HeroSlideshow from "@/components/HeroSlideshow";
 import ServiceCard from "@/components/ServiceCard";
 import SEOHead from "@/components/SEOHead";
-import FAQSection from "@/components/FAQSection";
 import service1 from "@/assets/service-1.jpg";
 import service2 from "@/assets/service-2.jpg";
 import service3 from "@/assets/service-3.jpg";
@@ -301,75 +300,9 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* FAQ Section */}
-      <FAQSection />
-
-      {/* Footer */}
-      <footer className="bg-card border-t border-border py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="bg-gradient-primary p-2 rounded-lg">
-                  <Heart className="h-5 w-5 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg">BhopalGenuineServices</h3>
-                  <p className="text-xs text-muted-foreground">.com</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground text-sm">
-                India's most trusted platform for genuine adult services with complete privacy and safety.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/browse" className="hover:text-primary">Browse Real Profiles</Link></li>
-                <li><Link to="/post-ad" className="hover:text-primary">Post Your Ad</Link></li>
-                <li><Link to="/blog" className="hover:text-primary">Dating Safety Blog</Link></li>
-                <li><Link to="/login" className="hover:text-primary">Login</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-4">Safety & Support</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/blog/safe-offline-meetings" className="hover:text-primary">Safety Tips</Link></li>
-                <li><Link to="/blog/real-vs-fake-profiles" className="hover:text-primary">Profile Verification</Link></li>
-                <li><Link to="/blog/bhopal-night-dating-guide" className="hover:text-primary">Bhopal Dating Guide</Link></li>
-                <li><a href="#" className="hover:text-primary">Privacy Policy</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-4">Contact Us</h3>
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <p className="flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  Call Support
-                </p>
-                <p className="flex items-center gap-2">
-                  <MessageCircle className="h-4 w-4" />
-                  WhatsApp Support
-                </p>
-                <p className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4" />
-                  Bhopal, India
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 BhopalGenuineServices.com. All rights reserved. | 18+ Only</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
-};
+};  
+
 
 export default Index;

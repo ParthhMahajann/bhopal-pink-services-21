@@ -34,26 +34,7 @@ const Header = () => {
             <Link to="/blog" className="text-foreground hover:text-primary transition-colors">
               Safety Blog
             </Link>
-            <Link to="/post-ad" className="text-foreground hover:text-primary transition-colors">
-              Post Ad
-            </Link>
           </nav>
-
-          {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" size="sm" asChild>
-              <Link to="/login">
-                <User className="h-4 w-4" />
-                Login
-              </Link>
-            </Button>
-            <Button variant="hero" size="sm" asChild>
-              <Link to="/post-ad">
-                <Plus className="h-4 w-4" />
-                Post Ad
-              </Link>
-            </Button>
-          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -89,27 +70,6 @@ const Header = () => {
               >
                 Safety Blog
               </Link>
-              <Link 
-                to="/post-ad" 
-                className="text-foreground hover:text-primary transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Post Ad
-              </Link>
-              <div className="flex flex-col space-y-2 pt-3 border-t border-border">
-                <Button variant="outline" size="sm" asChild>
-                  <Link to="/login" onClick={() => setIsMenuOpen(false)}>
-                    <User className="h-4 w-4" />
-                    Login
-                  </Link>
-                </Button>
-                <Button variant="hero" size="sm" asChild>
-                  <Link to="/post-ad" onClick={() => setIsMenuOpen(false)}>
-                    <Plus className="h-4 w-4" />
-                    Post Ad
-                  </Link>
-                </Button>
-              </div>
             </nav>
           </div>
         )}

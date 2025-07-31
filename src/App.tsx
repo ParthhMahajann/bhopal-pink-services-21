@@ -9,7 +9,6 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
-import PostAd from "./pages/PostAd";
 import Browse from "./pages/Browse";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
@@ -28,14 +27,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/login" element={<Login />} />
-              <Route 
-                path="/post-ad" 
-                element={
-                  <ProtectedRoute>
-                    <PostAd />
-                  </ProtectedRoute>
-                } 
-              />
+              
               <Route path="/browse" element={<Browse />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
